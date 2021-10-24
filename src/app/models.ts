@@ -11,7 +11,7 @@ export interface Game {
   parent_platforms: Array<ParentPlatform>;
   publishers: Array<Publishers>;
   ratings: Array<Rating>;
-  screenshots: Array<Screenshots>;
+  short_screenshots: Array<Screenshots>;
   trailers: Array<Trailer>;
 }
 
@@ -33,6 +33,8 @@ interface Publishers {
 }
 interface Rating {
   name: string;
+  title: string;
+  count: number;
 }
 interface Screenshots {
   image: string;
